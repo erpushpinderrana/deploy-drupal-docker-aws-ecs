@@ -3,7 +3,7 @@ services:
   amdphp:
     build:
       context: '.'
-    container_name: apche_php
+    container_name: apache_php
     ports:
       - "80:80"
     volumes:
