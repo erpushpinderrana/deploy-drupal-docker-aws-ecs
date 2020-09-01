@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+  amdphp:
+    build:
+      context: '.'
+    container_name: apche_php
+    ports:
+      - "80:80"
+    volumes:
+      - ./src/:/var/www/html/
