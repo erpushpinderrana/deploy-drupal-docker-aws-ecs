@@ -1,7 +1,7 @@
 FROM amd64/php:7.4-apache
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql
-RUN apt-get update -y && apt-get install -y libwebp-dev libjpeg62-turbo-dev libpng-dev libxpm-dev \
+RUN apt-get update -y && apt-get install -y libwebp-dev libjpeg62-turbo-dev libpng-dev libxpm-dev vim\
     libfreetype6-dev
 RUN apt-get update && \
     apt-get install -y \
