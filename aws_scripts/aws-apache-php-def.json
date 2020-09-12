@@ -1,0 +1,18 @@
+{
+  "family": "aws-apache-php-def",
+  "containerDefinitions": [
+    {
+      "image": "000xxxxxx107.dkr.ecr.us-east-2.amazonaws.com/aws-drupal-ecr:v_%BUILD_NUMBER%",
+      "name": "aws-apache-php-def",
+      "cpu": 10,
+      "memory": 256,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 5000,
+          "hostPort": 80
+        }
+      ]
+    }
+  ]
+}
