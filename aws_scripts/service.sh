@@ -1,4 +1,5 @@
 #!/bin/bash
+# BUILD_NUMBER=3
 SERVICE_NAME="aws-ecs-service"
 IMAGE_VERSION="v_"${BUILD_NUMBER}
 TASK_FAMILY="aws-apache-php-def"
@@ -8,10 +9,11 @@ sed -e "s;%BUILD_NUMBER%;${BUILD_NUMBER};g" aws-apache-php-def.json > aws-apache
 aws ecs register-task-definition --family aws-apache-php-def.json --cli-input-json file://aws-apache-php-def-v_${BUILD_NUMBER}.json
 
 # Update the service with the new task definition and desired count
-TASK_REVISION=`aws ecs describe-task-definition --task-definition aws-apache-php-def | egrep "revision" | tr "/" " " | awk '{print $2}' | sed 's/"$//'`
+TASK_REVISION=`aws ecs describe-task-definition --task-definition aws-apache-php-def | egrep "revision" | tr "/" " " | awk '{print $2}' | sed 's/,$//'`
 DESIRED_COUNT=`aws ecs describe-services --services ${SERVICE_NAME} | egrep "desiredCount" | tr "/" " " | awk '{print $2}' | sed 's/,$//'`
 if [ "$DESIRED_COUNT" = "0" ]; then
     DESIRED_COUNT="1"
 fi
 
-aws ecs update-service --force-new-deployment --cluster aws-drupal-ecs-cluster --region us-east-2 --service ${SERVICE_NAME} --task-definition ${TASK_FAMILY}:${TASK_REVISION} --desired-count ${DESIRED_COUNT}
+# Update the service in AWS with new task definition revision
+aws ecs update-service --cluster public-web-ecs-cluster --region us-east-2 --service ${SERVICE_NAME} --task-definition ${TASK_FAMILY}:${TASK_REVISION} --desired-count ${DESIRED_COUNT}
