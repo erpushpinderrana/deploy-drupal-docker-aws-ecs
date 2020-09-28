@@ -16,4 +16,8 @@ if [ "$DESIRED_COUNT" = "0" ]; then
 fi
 
 # Update the service in AWS with new task definition revision
-aws ecs update-service --cluster public-web-ecs-cluster --region us-east-2 --service ${SERVICE_NAME} --task-definition ${TASK_FAMILY}:${TASK_REVISION} --desired-count ${DESIRED_COUNT}
+aws ecs update-service --cluster aws-ecs-poc --region us-east-2 --service ${SERVICE_NAME} --task-definition ${TASK_FAMILY}:${TASK_REVISION} --desired-count ${DESIRED_COUNT}
+
+# Update the service by managing parameters in a separate file, equivalent to above command.
+#sed -e "s;%TASK_NUMBER%;${TASK_FAMILY}:${TASK_REVISION};g" service-update.json > service-update-${TASK_REVISION}.json
+#aws ecs update-service --cli-input-json file://service-update-${TASK_REVISION}.json
