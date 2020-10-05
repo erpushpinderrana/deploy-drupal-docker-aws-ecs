@@ -60,15 +60,6 @@ variable "load_balancers" {
   description = "The load balancers to couple to the instances. Only used when NOT using ALB"
 }
 
-variable "key_name" {
-  description = "SSH key name to be used"
-}
-
-variable "custom_userdata" {
-  default     = ""
-  description = "Inject extra command in the instance template to be run on boot"
-}
-
 variable "ecs_config" {
   default     = "echo '' > /etc/ecs/ecs.config"
   description = "Specify ecs configuration or get it from S3. Example: aws s3 cp s3://some-bucket/ecs.config /etc/ecs/ecs.config"

@@ -49,21 +49,12 @@ variable "desired_capacity" {
   description = "The desired capacity of the cluster"
 }
 
-variable "key_name" {
-  description = "SSH key name to be used"
-}
-
 variable "instance_type" {
   description = "AWS instance type to use"
 }
 
 variable "ecs_aws_ami" {
   description = "The AWS ami id to use for ECS"
-}
-
-variable "custom_userdata" {
-  default     = ""
-  description = "Inject extra command in the instance template to be run on boot"
 }
 
 variable "ecs_config" {
