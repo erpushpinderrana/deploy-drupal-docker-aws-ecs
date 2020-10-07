@@ -18,6 +18,9 @@ module "ecs" {
   desired_capacity     = var.desired_capacity
   instance_type        = var.instance_type
   ecs_aws_ami          = var.ecs_aws_ami
+  ecs_ecr              = var.ecs_ecr
+  ecs_task_definition  = var.ecs_task_definition
+  ecs_service          = var.ecs_service
 }
 
 variable "vpc_cidr" {}
@@ -27,6 +30,9 @@ variable "min_size" {}
 variable "desired_capacity" {}
 variable "instance_type" {}
 variable "ecs_aws_ami" {}
+variable "ecs_ecr" {}
+variable "ecs_task_definition" {}
+variable "ecs_service" {}
 
 variable "private_subnet_cidrs" {
   type = list

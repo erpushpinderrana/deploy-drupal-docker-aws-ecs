@@ -61,3 +61,15 @@ variable "ecs_config" {
   default     = "echo '' > /etc/ecs/ecs.config"
   description = "Specify ecs configuration or get it from S3. Example: aws s3 cp s3://some-bucket/ecs.config /etc/ecs/ecs.config"
 }
+
+variable "ecs_service" {
+  default = "ECS Service"
+}
+
+variable "ecs_task_definition" {
+  default = "ECS Task Definition"
+}
+
+variable "ecs_ecr" {
+  default = "ECR Repository"
+}

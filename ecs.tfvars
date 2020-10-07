@@ -17,3 +17,10 @@ desired_capacity = 1
 instance_type = "t2.micro"
 
 ecs_aws_ami = "ami-c5b09ad2"
+
+ecs_ecr = "ecs_poc_ecr_repo"
+
+ecs_task_definition = "ecs_poc_task_definition"
+
+ecs_service = "ecs_poc_service"
+
