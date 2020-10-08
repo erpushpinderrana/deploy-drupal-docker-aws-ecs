@@ -16,22 +16,22 @@ Clone this repository and run the below command:
 
 If it runs successfully, then it will create the below resources in your AWS console:
 
-Cluster
+* Cluster
 ![ECS Cluster](https://github.com/erpushpinderrana/files/blob/master/Cluster.png)
 
-ECR
+* ECR
 ![ECR](https://github.com/erpushpinderrana/files/blob/master/ECR.png)
 
-EC2 Instance
+* EC2 Instance
 ![EC2](https://github.com/erpushpinderrana/files/blob/master/EC2_instance.png)
 
-Auto Scaling Group
+* Auto Scaling Group
 ![ASG](https://github.com/erpushpinderrana/files/blob/master/ASG.png)
 
-ECS Task Definition
+* ECS Task Definition
 ![Task Definition](https://github.com/erpushpinderrana/files/blob/master/ECS%20Task%20Def.png)
 
-AWS ECS Roles
+* AWS ECS Roles
 ![AWS ECS Roles](https://github.com/erpushpinderrana/files/blob/master/AWS%20ECS%20Roles.png)
 
 ## Using Jenkins
