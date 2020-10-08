@@ -14,7 +14,7 @@ Clone this repository and run the below command:
 * ``terraform plan -input=false -var-file=ecs.tfvars`` Create an execution plan.
 * ``terraform apply -input=false -var-file=ecs.tfvars`` To apply the changes required to reach the desired state of the configuration.
 
-If it runs successfully, then it will create the below services in your AWS console:
+If it runs successfully, then it will create the below resources in your AWS console:
 
 Cluster
 ![ECS Cluster](https://github.com/erpushpinderrana/files/blob/master/Cluster.png)
