@@ -34,5 +34,8 @@ ECS Task Definition
 AWS ECS Roles
 ![AWS ECS Roles](https://github.com/erpushpinderrana/files/blob/master/AWS%20ECS%20Roles.png)
 
+## Using Jenkins
+In case, if you need to setup it using Jenkins then you should follow the instructions in [Jenkins Setup](https://github.com/erpushpinderrana/jenkins-terraform-aws/tree/master/jenkins_scripts).
+
 ## References
 * https://github.com/erpushpinderrana/terraform-ecs
