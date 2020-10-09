@@ -1,4 +1,4 @@
-# Create basic AWS services using Terraform. 
+# Create basic AWS resources using Terraform. 
 WIP
 
 ## Prerequisites
