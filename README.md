@@ -1,4 +1,4 @@
-# Deploy Drupal Website Docker Containers on AWS ECS
+# Deploy a basic PHP Drupal Docker Container on AWS ECS
 WIP
 
 ## Prerequisites
