@@ -1,9 +1,9 @@
 {
-  "family": "aws-apache-php-def",
+  "family": "ecs_poc_task_definition",
   "containerDefinitions": [
     {
-      "image": "000xxxxxx107.dkr.ecr.us-east-2.amazonaws.com/aws-drupal-ecr:v_%BUILD_NUMBER%",
-      "name": "aws-apache-php-def",
+      "image": "000xxxxxx107.dkr.ecr.us-east-2.amazonaws.com/ecs_poc_ecr_repo:v_%BUILD_NUMBER%",
+      "name": "ecs_poc_task_definition",
       "cpu": 10,
       "memory": 256,
       "essential": true,

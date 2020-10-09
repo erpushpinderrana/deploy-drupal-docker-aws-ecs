@@ -1,0 +1,10 @@
+{
+    "cluster": "aws-ecs-poc",
+    "service": "ecs_poc_service",
+    "taskDefinition": "%TASK_NUMBER%",
+    "desiredCount": 1,
+    "deploymentConfiguration": {
+        "maximumPercent": 100,
+        "minimumHealthyPercent": 0
+    }
+}

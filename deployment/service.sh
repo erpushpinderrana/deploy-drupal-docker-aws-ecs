@@ -1,8 +1,8 @@
 #!/bin/bash
 # BUILD_NUMBER=3
-SERVICE_NAME="aws-ecs-service"
+SERVICE_NAME="ecs_poc_service"
 IMAGE_VERSION="v_"${BUILD_NUMBER}
-TASK_FAMILY="aws-apache-php-def"
+TASK_FAMILY="ecs_poc_task_definition"
 
 # Create a new task definition for this build
 sed -e "s;%BUILD_NUMBER%;${BUILD_NUMBER};g" aws-apache-php-def.json > aws-apache-php-def-v_${BUILD_NUMBER}.json

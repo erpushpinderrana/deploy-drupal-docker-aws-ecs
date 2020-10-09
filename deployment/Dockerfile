@@ -44,6 +44,5 @@ RUN apt-get update -y && apt-get install -y \
 COPY src/ /var/www/html/
 
 WORKDIR /var/www/html
-VOLUME /var/www/html
 
 EXPOSE 80
