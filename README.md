@@ -9,5 +9,8 @@ WIP
 ## Quick Setup
 1. Clone this repository.
 2. Create a Pipeline job in Jenkins and put the [groovy](https://github.com/erpushpinderrana/deploy-drupal-docker-aws-ecs/blob/aws-jenkins-ecs-deployment/jenkins_pipeline.groovy) script code and update the parameters with your AWS configurations.
+![Jenkins Job](https://github.com/erpushpinderrana/files/blob/master/Jenkins_job.png)
+![Jenkins Pipeline](https://github.com/erpushpinderrana/files/blob/master/Jenkins_pipeline_groovy.png)
 3. Save the job.
 4. Run build.
+![Jenkins Build](https://github.com/erpushpinderrana/files/blob/master/Jenkins_build_aws.png)
