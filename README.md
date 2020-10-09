@@ -38,4 +38,4 @@ If it runs successfully, then it will create the below resources in your AWS con
 In case, if you need to setup it using Jenkins then you should follow the instructions in [Jenkins Setup](https://github.com/erpushpinderrana/jenkins-terraform-aws/tree/master/jenkins_scripts).
 
 ## References
-* https://github.com/erpushpinderrana/terraform-ecs
+* https://github.com/arminc/terraform-ecs
